@@ -1,0 +1,19 @@
+.app {
+    width: 550px;
+    margin: 50px auto 20px;
+    padding: 0 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    &__main {
+        width: 100%;
+        border: 1px solid #555;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .app {
+        width: 300px;
+    }
+}

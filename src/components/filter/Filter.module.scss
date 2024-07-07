@@ -1,0 +1,50 @@
+.filter {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 6px 10px;
+
+    button {
+        background-color: transparent;
+        border: none;
+        padding: 2px 6px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #f1f1f1;
+            transition: background-color 0.2s;
+        }
+    }
+
+    &__status {
+        margin: 0 5px;
+        border-radius: 3px;
+    }
+
+    &__activeStatus {
+        box-shadow: 0 0 4px rgb(252, 73, 73);
+    }
+
+    &__number {
+        margin-right: auto;
+    }
+
+    &__clear {
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .filter {
+        flex-direction: column;
+        justify-content: center;
+
+        &__number {
+            margin-right: 0;
+        }
+
+        button {
+            margin: 4px 0;
+        }
+    }
+}
